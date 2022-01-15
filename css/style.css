@@ -1,0 +1,1537 @@
+
+/*-------------------General-----------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+    margin: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;   
+}
+
+.middle{
+    padding: 0 10px;
+}
+
+.white{
+    color: white;
+    text-shadow: 0.5px 0.2px white;
+}
+
+.blue{
+    color: blue;
+}
+
+.clearBlue{
+    color: rgb(29, 229, 229);
+    text-shadow: 0.5px 0.2px blue;
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.btn{
+    color: white;
+    font-size: 1rem;
+    margin: 20px auto;
+    width: 60%;
+    height: 30px;
+    border-radius: 50px;
+    background:-moz-linear-gradient(left,rgb(12,7,234), rgb(101,12,245, 0.8)) ;
+    background:-webkit-linear-gradient(left,rgb(12,7,234), rgb(101,12,245, 0.8)) ;
+    background:-o-linear-gradient(left,rgb(12,7,234), rgb(101,12,245, 0.8)) ;
+}
+
+figure{
+    margin: 0;
+}
+
+#haut{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 100;
+    cursor: pointer; 
+}
+
+.iconHaut{
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.iconHaut:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+}
+
+/*--------------------------------carrousel---------------------------------*/
+
+.owl-nav{
+    display: none;
+}
+
+/*--------------------------------Fin carrousel-----------------------------*/
+
+/*-------------------Header-------------------------------------------------*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.747);
+    color: white;
+}
+
+header h1{
+    font-size: 2rem;
+    padding-left: 50px;
+}
+
+/*------------------Menu burger--------------------------------------------*/
+
+.menu{
+    display: none;
+}
+
+.close{
+    display: none;
+    color: red;
+}
+
+.hamburger{
+    position: absolute;
+    display: block;
+    top:30px;
+    right: 30px;
+}
+
+.showMenu{
+    display: block;
+    margin-right: 30px;  
+}
+
+header .menu a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 5px 0;
+}
+
+/*------------------Fin menu burger--------------------------------------*/
+
+
+/*-------------------Main------------------------------------------------*/
+
+#merBackground1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: 
+    -moz-linear-gradient(bottom left,rgba(81, 7, 234, 0.8), rgba(101, 12, 245, 0.8), rgba(20, 233, 247, 1)),
+    url("../img/mer.png") ;
+    background-image: 
+    -webkit-linear-gradient(bottom left,rgba(81, 7, 234, 0.8), rgba(101, 12, 245, 0.8), rgba(20, 233, 247, 1)),
+    url("../img/mer.png") ;
+    background-image: 
+    -o-linear-gradient(bottom left,rgba(81, 7, 234, 0.8), rgba(101, 12, 245, 0.8), rgba(20, 233, 247, 1)),
+    url("../img/mer.png") ;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
+
+.para{
+    text-align: center;
+    color: white;
+    text-shadow: 0.5px 0.2px white;
+}
+
+.para .thin{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.para .gros{
+    font-size: 1.8rem;
+}
+
+/*-----------------------------About-----------------------------*/
+
+#about{
+    margin-bottom: 30px;
+}
+
+#about h2{
+    text-align: center;
+}
+
+.design{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+/*----------------Carrousel Web design---------------------------*/
+
+.web{
+    width: 80%;
+    margin: 30px auto; 
+}
+
+.web h4{
+    text-align: left; 
+}
+
+/*----------------Fin Carrousel Web design---------------------------*/
+
+
+/*-------------------------------Article-----------------------------*/
+
+article{
+    margin-bottom: 30px;
+}
+
+article #basic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: 
+    -moz-linear-gradient(bottom ,rgba(12, 7, 234, 0.6), rgba(166, 76, 237, 0.6), rgba(101, 12, 245, 1)),
+    url("../img/gaming.png") ;
+    background-image: 
+    -webkit-linear-gradient(bottom ,rgba(12, 7, 234, 0.6), rgba(166, 76, 237, 0.6), rgba(101, 12, 245, 1)),
+    url("../img/gaming.png") ;
+    background-image: 
+    -o-linear-gradient(bottom ,rgba(12, 7, 234, 0.6), rgba(166, 76, 237, 0.6), rgba(101, 12, 245, 1)),
+    url("../img/gaming.png") ;
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+}
+
+/*--------------------------------team-----------------------------------*/
+
+#team{
+    margin-bottom: 30px;
+}
+
+#team .base{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#team h3 {
+    margin: 20px 0;
+    font-size: 2.8rem;
+    text-align: center;
+    background: -webkit-linear-gradient(bottom left, rgb(172,12,245), rgb(45,230,255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.membre{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    border: 1px solid black;
+    width: 250px;
+    height: 420px;
+}
+
+.membre h2, p{
+    margin: 0 auto;
+}
+
+.membre p{
+    font-style: italic;
+}
+
+.membre h6{
+    font-size: 1rem;
+    margin: 0;
+    margin-top: 30px;
+    padding-left: 5px;
+     
+}
+
+.membre h6 span{
+    padding-left: 45px;
+}
+
+.membre h6 .pourcentage{
+    padding-left: 50px;
+}
+
+.photo{
+    margin: 0 auto;
+    margin-top: 25px;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/sarah.png");
+    background-size:cover;
+}
+
+.photo2{
+    margin: 0 auto;
+    margin-top: 25px;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/becka.png");
+    background-size:cover;
+}
+
+.photo3{
+    margin: 0 auto;
+    margin-top: 25px;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/alex.png");
+    background-size:cover;
+}
+
+.progress90{
+    border: 1px solid black;
+    height: 10px;
+    width: 80%;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.progress901{ 
+    border: 1px solid black;
+    height: 9px;
+    width: 90%;
+    border-radius: 5px; 
+    background: -moz-linear-gradient(left, rgb(12,7,234), rgb(101,12,245), rgb(42,189,251), rgb(45,230,255));
+    background: -webkit-linear-gradient(left, rgb(12,7,234), rgb(101,12,245), rgb(42,189,251), rgb(45,230,255));
+    background: -o-linear-gradient(left, rgb(12,7,234), rgb(101,12,245), rgb(42,189,251), rgb(45,230,255));
+}
+
+.progress75{
+    border: 1px solid black;
+    height: 10px;
+    width: 80%;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-bottom: 10PX;
+}
+
+.progress751{ 
+    border: 1px solid black;
+    height: 9px;
+    width: 75%;
+    border-radius: 5px; 
+    background: -moz-linear-gradient(left, rgb(12,7,234), rgb(101,12,245), rgb(42,189,251), rgb(45,230,255));
+    background: -webkit-linear-gradient(left, rgb(12,7,234), rgb(101,12,245), rgb(42,189,251), rgb(45,230,255));
+    background: -o-linear-gradient(left, rgb(12,7,234), rgb(101,12,245), rgb(42,189,251), rgb(45,230,255));
+}
+
+/*----------------------------------------Work-------------------------------*/
+
+#work{
+    margin-bottom: 30px;
+}
+
+#work .clearBlue{
+    font-size: 1.3rem;
+}
+
+#work .clearBlue, h4{
+    text-align: center;
+}
+
+#work h3{
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 0.2px 0.2px black;
+}
+
+#work span, h4{
+    font-size: 0.95rem;
+}
+
+#work span{
+    color:rgba(166, 76, 237)
+}
+
+/*---------------------------------tableau photo----------------------------*/
+
+table{
+    border-collapse: collapse;
+    min-width: 100%;
+    height: 750px;
+    margin-bottom: 30px;
+}
+
+td{
+    position: relative;
+}
+
+.top{
+    position: absolute;
+    top: 0;
+    width: 100%; 
+    height: 200px;  
+}
+
+.top1{
+    position: absolute;
+    top:200px;
+    width: 50%;
+    height: 100px;
+}
+
+.top2{
+    position: absolute;
+    top: 300px;
+    width: 50%;
+    height: 100px;
+}
+
+.top3{
+    position: absolute;
+    top: 200px;
+    right: 0;
+    width: 50%;
+    height: 200px;
+}
+
+.bottom{
+    position: absolute;
+    top: 400px;
+    width: 100%;
+    height: 200px;
+}
+
+.bottom1{
+    position: absolute;
+    top: 600px;
+    left: 0;
+    width: 50%;
+    height: 200px;
+}
+
+.bottom2{
+    position: absolute;
+    top: 600px;
+    right: 0;
+    width: 50%;
+    height: 100px;
+}
+
+.bottom3{
+    position: absolute;
+    top: 700px;
+    right: 0;
+    width: 50%;
+    height: 100px;
+}
+
+/*---------------------------------Fin tableau photo----------------------------*/
+
+/*----------------------------------------------Blog----------------------------*/
+
+#blog{
+    margin-bottom: 30px;
+}
+
+#blog .blog1{
+    text-align: center;
+}
+
+#blog .blog1 .clearBlue{
+    margin: 30px 0;
+}
+
+#blog .blog1 .clearBlue, h3{
+    text-align: center; 
+}
+
+#blog .blog1 .middle{
+    text-align: left;
+}
+#blog .blog1 .blogImg{
+    width: 100%;  
+    padding: 0 10px; 
+    height: 150px;
+}
+
+/*-------------------------------------------Contact--------------------------*/
+
+#contact{
+    color: white;
+    background-image: 
+    -moz-linear-gradient(bottom,rgb(12, 7, 234, 0.8), rgb(101, 12, 245)),
+    url("../img/contact.png") ;
+    background-image: 
+    -webkit-linear-gradient(bottom,rgb(12, 7, 234, 0.8), rgb(101, 12, 245)),
+    url("../img/contact.png") ;
+    background-image: 
+    -o-linear-gradient(bottom,rgb(12, 7, 234, 0.8), rgb(101, 12, 245)),
+    url("../img/contact.png") ;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+}
+
+#contact h3{
+    text-align: left;
+}
+
+#contact p{
+    padding-top: 30px;
+}
+#contact a{
+    color: white;
+    text-decoration: none;
+}
+
+.map{
+    background-image: url("../img/map.png");
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
+
+/*-------------------Footer---------------------------------------------------*/
+
+footer{
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer h3{
+    margin: 0;
+    padding-left: 10px;
+}
+
+footer .iconsP{
+    padding-right: 10px;
+}
+
+footer .iconsP .icons a{
+    color: black;
+    padding: 0 2px;
+}
+
+footer p{
+
+    padding-right: 10px;
+    width: 100%;
+    padding-top: 10px;
+    font-size: 0.5rem;
+}
+
+/*-------------------------------Media Query-------------------------------*/
+
+@media screen and (min-width: 420px) and (max-width: 640px) {
+
+    .middle{
+        padding: 0 50px;
+    }
+
+    .btn{
+        width: 40%;
+    }
+
+    table{
+        min-width: 80%;
+        margin: 0 auto;
+    }
+
+    #blog .blog1 .blogImg{
+        width: 80%;  
+    }
+    .map{
+        height: 300px;
+    }
+}
+
+/*----------------------------------------------------------------------*/
+
+@media screen and (min-width: 641px) and (max-width: 767px){
+
+    .middle{
+        padding: 0 30px;
+    }
+
+    header{
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /*-------------------------------media Burger----------------------------*/
+
+    .menu{
+        display: flex;
+        gap:15px;
+        padding-right: 15px;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    /*----------------------------------media work----------------------------*/
+
+    table{
+        min-width: 90%;
+        margin: 0 auto;
+    }
+
+    .top{
+        right: 0;
+        width: 50%; 
+        height: 350px;  
+    }
+    
+    .top1{
+        top:0;
+        left:25%;
+        width: 25%;
+        height: 175px;
+    }
+    
+    .top2{
+        top: 175px;
+        left: 25%;
+        width: 25%;
+        height: 175px;
+    }
+    
+    .top3{ 
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: 350px;
+    }
+    
+    .bottom{
+        top: 350px;
+        left: 0;
+        width: 50%;
+        height: 350px;
+    }
+    
+    .bottom1{
+        top: 525px;
+        left: 50%;
+        width: 25%;
+        height: 175px;
+    }
+    
+    .bottom2{
+        top: 350px;
+        right: 0;
+        width: 50%;
+        height: 175px;
+    }
+    
+    .bottom3{
+        position: absolute;
+        top: 525px;
+        right: 0;
+        width: 25%;
+        height: 175px;
+    }
+
+    /*----------------------------------media Blog----------------------------*/
+
+    #blog{
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        height: 600px;
+    }
+    
+    #blog .blog2 .blogImg{  
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 250px;  
+        padding: 0;
+    }
+
+    #blog .blog2 .clearBlue{  
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        text-align: left;
+      
+    }
+
+    #blog .blog2 h3{  
+        position: absolute;
+        top: 50px;
+        right: 0;
+        margin: 0;
+        text-align: left;
+
+    }
+    #blog .blog2 .middle{  
+        position: absolute;
+        top: 100px;
+        right: 0;
+        padding: 0;
+        width:200px;
+        text-align: left;
+    }
+    
+    #blog .blog2 .btn{  
+        position: absolute;
+        top: 160px;
+        left: 0;
+        width:40%;
+        margin:20px;
+        padding: 0;
+    }
+
+    #blog .blog3 .blogImg{  
+        position: absolute;
+        top: 300px;
+        right: 0;
+        width: 250px; 
+        padding: 0;
+    }
+
+    #blog .blog3 .clearBlue{  
+       position: absolute;
+       top: 300px;
+       left: 0;
+       margin: 0; 
+    }
+
+    #blog .blog3 h3{  
+        position: absolute;
+        top: 350px;
+        left: 0;
+        margin: 0;
+
+    }
+
+    #blog .blog3 .middle{  
+        position: absolute;
+        top: 400px;
+        left: 0;
+        padding: 0;
+        width: 200px;
+    }
+    
+    #blog .blog3 .btn{  
+        position: absolute;
+        top: 460px;
+        right: 0;
+        width:40%;
+        margin:20px;
+        padding: 0;
+    }
+
+    /*------------------------------meida-Contact--------------------------*/
+
+    #fullContact{
+        position: relative;
+        height: 300px;
+    }
+    #contact{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 300px;
+    }
+    .map{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 300px;
+    }
+}
+
+
+@media screen and (min-width: 668px) and (max-width:820px){
+    .middle{
+        padding: 0 30px;
+    }
+
+    header{
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /*-------------------------------media Burger----------------------------*/
+    .menu{
+        display: flex;
+        gap:30px;
+        padding-right: 15px;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    /*----------------------------------media basic----------------------------*/
+
+    #basic .middle{
+        padding-top: 20px;
+    }
+
+    /*----------------------------------media work----------------------------*/
+
+    table{
+        min-width: 90%;
+        margin: 0 auto;
+    }
+
+    .top{
+        right: 0;
+        width: 50%; 
+        height: 350px;  
+    }
+    
+    .top1{
+        top:0;
+        left:25%;
+        width: 25%;
+        height: 175px;
+    }
+    
+    .top2{
+        top: 175px;
+        left: 25%;
+        width: 25%;
+        height: 175px;
+    }
+    
+    .top3{ 
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: 350px;
+    }
+    
+    .bottom{
+        top: 350px;
+        left: 0;
+        width: 50%;
+        height: 350px;
+    }
+    
+    .bottom1{
+        top: 525px;
+        left: 50%;
+        width: 25%;
+        height: 175px;
+    }
+    
+    .bottom2{
+        top: 350px;
+        right: 0;
+        width: 50%;
+        height: 175px;
+    }
+    
+    .bottom3{
+        position: absolute;
+        top: 525px;
+        right: 0;
+        width: 25%;
+        height: 175px;
+    }
+
+    /*----------------------------------media Blog----------------------------*/
+
+    #blog{
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        height: 600px;
+    }
+    
+    #blog .blog2 .blogImg{  
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;  
+        padding: 0;
+    }
+
+    #blog .blog2 .clearBlue{  
+       position: absolute;
+       top: 0;
+       right: 0;
+       margin: 0;
+       width: 40%;
+       text-align: left;
+ 
+    }
+
+    #blog .blog2 h3{  
+        position: absolute;
+        top: 50px;
+        right: 0;
+        margin: 0;
+        width: 40%;
+        text-align: left;
+
+    }
+    #blog .blog2 .middle{  
+        position: absolute;
+        top: 100px;
+        right: 0;
+        padding: 0;
+        width: 40%;
+        text-align: left;
+    }
+    
+    #blog .blog2 .btn{  
+        position: absolute;
+        top: 160px;
+        left: 0;
+        width:40%;
+        padding: 0;
+    }
+
+    #blog .blog3 .blogImg{  
+        position: absolute;
+        top: 300px;
+        right: 0;
+        width: 40%; 
+        padding: 0;
+    }
+
+    #blog .blog3 .clearBlue{  
+       position: absolute;
+       top: 300px;
+       left: 0;
+       margin: 0; 
+    }
+
+    #blog .blog3 h3{  
+        position: absolute;
+        top: 350px;
+        left: 0;
+        margin: 0;
+    }
+
+    #blog .blog3 .middle{  
+        position: absolute;
+        top: 400px;
+        left: 0;
+        padding: 0;
+        width: 40%;
+    }
+    
+    #blog .blog3 .btn{  
+        position: absolute;
+        top: 460px;
+        right: 0;
+        width:40%; 
+        padding: 0;
+    }
+
+    /*------------------------------meida-Contact--------------------------*/
+
+    #fullContact{
+        position: relative;
+        height: 300px;
+    }
+    #contact{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 300px;
+    }
+    .map{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 300px;
+    }
+}
+
+/*-----------------------------------------------------------------------*/
+
+@media screen and (min-width: 821px) and (max-width:1024px) {
+    .middle{
+        padding: 0 30px;
+    }
+
+    header{
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /*-------------------------------media Burger----------------------------*/
+    .menu{
+        display: flex;
+        gap:30px;
+        padding-right: 50px;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    /*-------------------------------media main----------------------------*/
+     
+    #merBackground1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: 
+        -moz-linear-gradient(bottom left,rgba(81, 7, 234, 0.8), rgba(101, 12, 245, 0.8), rgba(20, 233, 247, 1)),
+        url("../img/mer.png") ;
+        width: 100%;
+        height: 800px;
+        background-size: cover;
+    }
+
+    .para{
+        text-align: center;
+        color: white;
+        text-shadow: 0.5px 0.2px white;
+    }
+
+    .para .thin{
+        font-size: 3rem;
+        font-style: italic;
+    }
+
+    .para .gros{
+        font-size: 5rem;
+    }
+    
+    /*----------------------------------media basic----------------------------*/
+
+    #basic .middle{
+        padding-top: 20px;
+    }
+
+    /*----------------------------------media work----------------------------*/
+
+    table{
+        min-width: 90%;
+        margin: 0 auto;
+    }
+
+    .top{
+        right: 0;
+        width: 50%; 
+        height: 350px;  
+    }
+    
+    .top1{
+        top:0;
+        left:25%;
+        width: 25%;
+        height: 175px;
+    }
+    
+    .top2{
+        top: 175px;
+        left: 25%;
+        width: 25%;
+        height: 175px;
+    }
+    
+    .top3{ 
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: 350px;
+    }
+    
+    .bottom{
+        top: 350px;
+        left: 0;
+        width: 50%;
+        height: 350px;
+    }
+    
+    .bottom1{
+        top: 525px;
+        left: 50%;
+        width: 25%;
+        height: 175px;
+    }
+    
+    .bottom2{
+        top: 350px;
+        right: 0;
+        width: 50%;
+        height: 175px;
+    }
+    
+    .bottom3{
+        position: absolute;
+        top: 525px;
+        right: 0;
+        width: 25%;
+        height: 175px;
+    }
+
+    /*----------------------------------media Blog----------------------------*/
+
+    #blog{
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        height: 600px;
+    }
+    
+    #blog .blog2 .blogImg{  
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;  
+        padding: 0;
+    }
+
+    #blog .blog2 .clearBlue{  
+       position: absolute;
+       top: 0;
+       right: 0;
+       margin: 0;
+       width: 40%;
+       text-align: left;
+    }
+
+    #blog .blog2 h3{  
+        position: absolute;
+        top: 50px;
+        right: 0;
+        margin: 0;
+        width: 40%;
+        text-align: left;
+    }
+
+    #blog .blog2 .middle{  
+        position: absolute;
+        top: 100px;
+        right: 0;
+        padding: 0;
+        width: 40%;
+        text-align: left;
+    }
+    
+    #blog .blog2 .btn{  
+        position: absolute;
+        top: 160px;
+        left: 0;
+        width:40%;
+        padding: 0;
+    }
+
+    #blog .blog3 .blogImg{  
+        position: absolute;
+        top: 300px;
+        right: 0;
+        width: 40%; 
+        padding: 0;
+    }
+
+    #blog .blog3 .clearBlue{  
+       position: absolute;
+       top: 300px;
+       left: 0;
+       margin: 0; 
+    }
+
+    #blog .blog3 h3{  
+        position: absolute;
+        top: 350px;
+        left: 0;
+        margin: 0;
+    }
+
+    #blog .blog3 .middle{  
+        position: absolute;
+        top: 400px;
+        left: 0;
+        padding: 0;
+        width: 40%;
+    }
+    
+    #blog .blog3 .btn{  
+        position: absolute;
+        top: 460px;
+        right: 0;
+        width:40%; 
+        padding: 0;
+    }
+
+    /*------------------------------meida-Contact--------------------------*/
+
+    #fullContact{
+        position: relative;
+        height: 300px;
+    }
+
+    #contact{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 300px;
+    }
+
+    .map{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 300px;
+    }
+
+    footer h3{
+        margin: 0;
+        padding-left: 50px;
+    }
+    
+    footer .iconsP{
+        padding-right: 50px;
+    }
+}
+
+/*-----------------------------------------------------------------------*/
+
+@media screen and (min-width:1025px) {
+    
+    .middle{
+        padding: 0 100px;
+    }
+
+    header{
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /*-------------------------------media Burger----------------------------*/
+
+    .menu{
+        display: flex;
+        gap:50px;
+        padding-right: 100px;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    /*-------------------------------------------------------Media Main-------------*/
+
+    #merBackground1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: 
+        -moz-linear-gradient(bottom left,rgba(81, 7, 234, 0.8), rgba(101, 12, 245, 0.8), rgba(20, 233, 247, 1)),
+        url("../img/mer.png") ;
+        width: 100%;
+        height: 1600px;
+        background-size: cover;
+    }
+
+    .para{
+        text-align: center;
+        color: white;
+        text-shadow: 0.5px 0.2px white;
+    }
+
+    .para .thin{
+        font-size: 5rem;
+        font-style: italic;
+    }
+
+    .para .gros{
+        font-size: 8rem;
+    }
+
+    /*-------------------------------------Media About-------------------------*/
+
+    .middle{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #about{
+        padding: 0 100px;
+    }
+
+    #about h2{
+        text-align: left;
+        padding:0 50px;
+        margin-bottom: 0;
+    }
+
+    #about .design{
+        text-align: left;
+    }
+
+    #about .middle p{
+        width: 60%;
+    }
+
+    #about .middle{
+        padding: 0 50px;
+    }
+
+    /*-------------------------------------Media basic-------------------------*/
+
+    article #basic{
+        display: block;
+        text-align: left;
+        background-image: 
+        -moz-linear-gradient(bottom ,rgba(12, 7, 234, 0.6), rgba(166, 76, 237, 0.6), rgba(101, 12, 245, 1)),
+        url("../img/gaming.png") ;
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        padding: 20px 100px;
+    }
+
+    article #basic .clearBlue{
+        padding: 0 50px;
+    } 
+
+    article #basic .white{
+        padding: 50px;
+    }
+
+    /*----------------------------------media work----------------------------*/
+
+    #work .clearBlue{
+        font-size: 2rem;
+    }
+
+    table{
+        min-width: 80%;
+        margin: 0 auto;
+    }
+
+    .top{
+        right: 0;
+        width: 50%; 
+        height: 350px;  
+    }
+
+    .top1{
+        top:0;
+        left:25%;
+        width: 25%;
+        height: 175px;
+    }
+
+    .top2{
+        top: 175px;
+        left: 25%;
+        width: 25%;
+        height: 175px;
+    }
+
+    .top3{ 
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: 350px;
+    }
+
+    .bottom{
+        top: 350px;
+        left: 0;
+        width: 50%;
+        height: 350px;
+    }
+
+    .bottom1{
+        top: 525px;
+        left: 50%;
+        width: 25%;
+        height: 175px;
+    }
+
+    .bottom2{
+        top: 350px;
+        right: 0;
+        width: 50%;
+        height: 175px;
+    }
+
+    .bottom3{
+        position: absolute;
+        top: 525px;
+        right: 0;
+        width: 25%;
+        height: 175px;
+    }
+
+    /*----------------------------------media Blog----------------------------*/
+
+    #blog{
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        height: 700px;
+    }
+
+    #blog .blog2 .blogImg{  
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;  
+        padding: 0;
+        height: 250px;
+    }
+
+    #blog .blog2 .clearBlue{  
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        width: 40%;
+        text-align: left;
+    }
+
+    #blog .blog2 h3{  
+        position: absolute;
+        top: 50px;
+        right: 0;
+        margin: 0;
+        width: 40%;
+        text-align: left;
+    }
+
+    #blog .blog2 .middle{  
+        position: absolute;
+        top: 100px;
+        right: 0;
+        padding: 0;
+        width: 40%;
+        text-align: left;
+    }
+
+    #blog .blog2 .btn{  
+        position: absolute;
+        top: 180px;
+        left: 60%;
+        width: 150px;
+        padding: 0;
+    }
+
+    #blog .blog3 .blogImg{  
+        position: absolute;
+        top: 300px;
+        right: 0;
+        width: 40%; 
+        padding: 0;
+        height: 250px;
+    }
+
+    #blog .blog3 .clearBlue{  
+        position: absolute;
+        top: 300px;
+        left: 0;
+        margin: 0; 
+    }
+
+    #blog .blog3 h3{  
+        position: absolute;
+        top: 350px;
+        left: 0;
+        margin: 0;
+    }
+
+    #blog .blog3 .middle{  
+        position: absolute;
+        top: 400px;
+        left: 0;
+        padding: 0;
+        width: 40%;
+    }
+
+    #blog .blog3 .btn{  
+        position: absolute;
+        top: 480px;
+        left: 0;
+        width: 150px; 
+        padding: 0;
+    }
+
+    /*------------------------------meida-Contact--------------------------*/
+
+    #fullContact{
+        position: relative;
+        height: 300px;
+    }
+
+    #contact{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 300px;
+    }
+
+    #contact .middle{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact .middle >p{
+        margin: 0;
+    }
+
+    .map{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 300px;
+    }
+
+    footer h3{
+        margin: 0;
+        padding-left: 100px;
+        font-size: 2rem;
+    }
+
+    footer .iconsP{
+        font-size: 2rem;  
+        padding-right: 100px;
+    }
+
+    footer .iconsP p{
+        font-size: 1rem;  
+        padding-right: 100px;
+    }
+}
